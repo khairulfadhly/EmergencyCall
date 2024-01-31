@@ -3,7 +3,7 @@ Aplikasi pangilan darurat Kab.Tangerang
 
 
 Update Icon dan splash screen
-depensi penting 
+dependensi penting 
 
 npm i @capacitor/geolocation
 "@capacitor/geolocation": "^5.0.4"
