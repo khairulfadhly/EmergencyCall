@@ -1,88 +1,3 @@
-// import React, { useState } from 'react';
-// import { IonButton, IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToolbar, IonToast, IonLoading } from '@ionic/react';
-// import { Redirect } from 'react-router';
-// import { useAuth } from '../auth';
-// import { auth } from '../firebase';
-// import './Home.css';
-
-
-
-// const LoginPage: React.FC = () => {
-//   const { loggedIn } = useAuth();
-//   const [email, setEmail] = useState('');
-//   const [password, setPassword] = useState('');
-//   const [errorMessage, setErrorMessage] = useState('');
-//   const [showToast, setShowToast] = useState(false);
-//   const [showLoading, setShowLoading] = useState(false);
-
-//   const handleLogin = async () => {
-//     try {
-//       setShowLoading(true);
-//       const credential = await auth.signInWithEmailAndPassword(email, password);
-//       console.log('credential:', credential);
-//       setShowLoading(false);
-//     } catch (error: any) {
-//       setErrorMessage(error.message);
-//       setShowToast(true);
-//       setShowLoading(false);
-//       if (error.code === 'auth/invalid-email') {
-//         setErrorMessage('Email tidak sesuai');
-//       }
-//     }
-//   };
-
-//   if (loggedIn) {
-//     return <Redirect to="/my/home" />;
-//   }
-
-//  return (
-//     <IonPage>
-//       <IonHeader>
-//         <IonToolbar>
-//           <IonTitle>Login</IonTitle>
-//         </IonToolbar>
-//       </IonHeader>
-//       <IonContent className="ion-padding">
-//         <form>
-//           <IonInput
-//             type="email"
-//             placeholder="Email"
-//             value={email}
-//             onIonChange={(event) => setEmail(event.detail.value!)}
-//             required
-//           ></IonInput>
-//           <IonInput
-//             type="password"
-//             placeholder="Password"
-//             value={password}
-//             onIonChange={(event) => setPassword(event.detail.value!)}
-//             required
-//           ></IonInput>
-//           {errorMessage && <p className="error-message">{errorMessage}</p>}
-//           <IonButton expand="block" onClick={handleLogin}> Login </IonButton>
-//           <IonButton expand="block" fill='clear' routerLink='/register'>dont have an account?</IonButton>
-//         </form>
-//         <IonToast
-//           isOpen={showToast}
-//           onDidDismiss={() => setShowToast(false)}
-//           message={errorMessage}
-//           duration={3000}
-//           color="danger"
-//         />
-//         <IonLoading
-//           isOpen={showLoading}
-//           message={'Tunggu Sebentar...'}
-//         />
-//       </IonContent>
-//     </IonPage> 
-//   );
-// };
-
-// export default LoginPage;
-//YANG ORI JANGAN DIGANTI!!!!
-
-
-
 import React, { useState } from 'react';
 import {
   IonButton,
@@ -266,14 +181,6 @@ const LoginPage: React.FC = () => {
 };
 
 export default LoginPage;
-
-
-
-
-
-// Forgot pasword bisa namun bila form email pada login tidak sesuai pada email asli dan melakukan forgot password maka akan error The email address is badly formatted
-// agar hal ini tidak terjadi harus mengisi dulu email yang inggin di ubah password atau lupa pasword dan melakukan forgor pasword
-
 
 
 
