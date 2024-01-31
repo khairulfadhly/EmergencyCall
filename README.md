@@ -1,6 +1,7 @@
-# EmergencyCall
+EmergencyCall
 Aplikasi pangilan darurat Kab.Tangerang
 
+Untuk APK pra-release ada di bagian realase 
 
 Update Icon dan splash screen
 dependensi penting 
